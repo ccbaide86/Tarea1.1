@@ -1,24 +1,17 @@
 // Ejercicio 1: Consumo de una API y Procesamiento de Datos
-// Función asíncrona para obtener y procesar los usuarios
 async function obtenerUsuarios() {
     try {
-        // Hacemos la petición GET a la API
         const respuesta = await fetch('https://jsonplaceholder.typicode.com/users');
-
-        // Convertimos la respuesta en formato JSON
         const usuarios = await respuesta.json();
 
-        // Iteramos sobre los usuarios para mostrar nombre y correo
         usuarios.forEach(usuario => {
             console.log(`Nombre: ${usuario.name}, Email: ${usuario.email}`);
         });
     } catch (error) {
-        // Manejamos posibles errores
         console.error('Error al obtener los usuarios:', error);
     }
 }
 
-// Llamamos a la función para obtener y mostrar los usuarios
 obtenerUsuarios();
 
 // Ejemolo practico del pdf
