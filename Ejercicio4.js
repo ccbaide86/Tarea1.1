@@ -18,3 +18,11 @@ console.log(nomProductos)
 
 const precioTotal = proFiltrados.reduce((tot, pro) => tot + pro.precio, 0);
 console.log("Precio total: ", precioTotal)
+
+// //Uso de map
+// const cuadrados = numeros.map((num) => num + num);
+// console.log(cuadrados);
+
+// // Uso de filter
+// const pares = numeros.filter((num) => num % 2 === 0);
+// console.log(pares);
